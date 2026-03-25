@@ -41,38 +41,46 @@ services      → Lógica do sistema
 
 Clone o repositório:
 
-git clone https://github.com/shadow123433/excluipramim.git
+```bash
+https://github.com/shadow123433/InstaRecover.git
+```
 
 Entre na pasta do projeto:
 
-cd excluipramim  
+```bash
+cd InstaRecover
 code .
+```
 
-Entre na pasta backend:
 
-cd backend  
 
 Instale as dependências:
 
+```bash
 npm install  
+```
 
 ## Variáveis de ambiente
 
-Crie um arquivo `.env` dentro da pasta backend:
+Crie um arquivo `.env` na raiz do projeto e insira a seguinte variavel:
 
-PORT=3000  
+```bash
+PORT=3000 
+``` 
 
 ## Iniciar o servidor
 
+```bash
 node server.js  
+```
 
 O servidor irá iniciar em:
 
 http://localhost:3000  
 
-Depois disso, abra o arquivo:
+Depois disso, abra o arquivo usando a extensão live server ou do jeito que vc preferir:
 
-app.html  
+index.html  
 
 ## Objetivo do projeto
 
