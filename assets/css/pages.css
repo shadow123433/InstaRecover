@@ -1,12 +1,39 @@
-.hidden {
-  display: none;
+/* Estilos da Index.html */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: -2rem; /* Efeito de sobreposição no hero */
 }
 
-.fade-in {
-  animation: fade 0.2s ease-in;
+.info ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%230095f6"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
 }
 
-@keyframes fade {
-  from { opacity: 0; }
-  to { opacity: 1; }
+/* Estilos da App.html (Assistente) */
+.subtitle {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.progress {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.result-box {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-left: 4px solid #28a745;
+    margin: 1.5rem 0;
+}
+
+#output {
+    white-space: pre-line; /* Mantém as quebras de linha do JS */
 }

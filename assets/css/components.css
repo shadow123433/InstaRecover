@@ -1,39 +1,79 @@
-.card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 15px;
+/* --- BOTÕES --- */
+
+/* Botão de Começar (Branco com texto Azul - Hero) */
+.btn-primary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--white);
+    color: var(--primary-color);
+    border-radius: var(--radius);
+    font-weight: 700; /* Texto bem nítido */
+    font-size: 1.1rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.btn-primary:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Botões Azuis (Dentro do Assistente / App) */
 .btn {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 6px;
-  background: #3b82f6;
-  color: white;
-  cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 0.8rem;
+    transition: background 0.2s;
 }
 
 .btn:hover {
-  background: #2563eb;
+    background-color: var(--primary-hover);
 }
 
+/* Botão Voltar (O "Outline" profissional que corrigimos) */
 .btn-secondary {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  background: transparent;
-  border: 1px solid #3b82f6;
-  color: #3b82f6;
+    display: block;
+    width: 100%;
+    padding: 0.9rem;
+    background-color: transparent;
+    border: 2px solid #dbdbdb;
+    color: #444;
+    border-radius: var(--radius);
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    transition: all 0.2s ease;
 }
 
-.result-box {
-  background: #0f172a;
-  padding: 10px;
-  border-radius: 6px;
-  margin-top: 10px;
+.btn-secondary:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: rgba(0, 149, 246, 0.04);
+}
+
+/* --- CARDS --- */
+.card {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    margin-bottom: 1.5rem;
+}
+
+.hidden {
+    display: none;
 }
