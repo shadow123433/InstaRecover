@@ -10,8 +10,6 @@ const elements = {
   output: document.getElementById("output")
 };
 
-// EVENTOS
-
 document.querySelectorAll("[data-problem]").forEach(btn => {
   btn.addEventListener("click", () => {
     state.problem = btn.dataset.problem;
@@ -25,8 +23,6 @@ document.querySelectorAll("[data-answer]").forEach(btn => {
     generatePlan();
   });
 });
-
-// API
 
 async function generatePlan() {
   goToStep(elements.step2, elements.result, 3);
@@ -45,7 +41,7 @@ async function generatePlan() {
 
     const data = await response.json();
 
-    renderResult(data.plan);
+    renderResult(data);
 
   } catch {
     showError(elements.output, "Erro ao conectar com o servidor.");

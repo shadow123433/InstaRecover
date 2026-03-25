@@ -1,11 +1,22 @@
-const { generatePlan } = require("../services/recoveryService");
+const { generateRecoveryPlan } = require("../services/recoveryService");
 
-function handleRecovery(req, res) {
+exports.handleRecovery = (req, res) => {
   const { problem, emailAccess } = req.body;
 
-  const plan = generatePlan(problem, emailAccess);
+  // validação básica
+  if (!problem) {
+    return res.status(400).json({
+      error: "Problema não informado"
+    });
+  }
 
-  res.json({ plan });
-}
+  try {
+    const result = generateRecoveryPlan(problem, emailAccess);
 
-module.exports = { handleRecovery };
+    return res.json(result);
+  } catch (error) {
+    return res.status(500).json({
+      error: "Erro interno no servidor"
+    });
+  }
+};

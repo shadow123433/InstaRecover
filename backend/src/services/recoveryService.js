@@ -1,19 +1,44 @@
-function generatePlan(problem, emailAccess) {
+function generateRecoveryPlan(problem, emailAccess) {
+
   if (problem === "hack") {
-    return emailAccess === "sim"
-      ? "Redefina sua senha imediatamente pelo site oficial."
-      : "Solicite verificação de identidade no suporte.";
+    if (emailAccess === "sim") {
+      return {
+        title: "Conta hackeada",
+        message: "Redefina sua senha imediatamente e verifique sua conta.",
+        link: "https://www.instagram.com/hacked/"
+      };
+    }
+
+    return {
+      title: "Conta hackeada sem acesso ao e-mail",
+      message: "Solicite verificação de identidade ao Instagram.",
+      link: "https://www.instagram.com/hacked/"
+    };
   }
 
   if (problem === "senha") {
-    return "Use a opção 'Esqueci minha senha'.";
+    return {
+      title: "Senha esquecida",
+      message: "Use a opção oficial para redefinir sua senha.",
+      link: "https://www.instagram.com/accounts/password/reset/"
+    };
   }
 
   if (problem === "email") {
-    return "Recupere seu e-mail ou use suporte.";
+    return {
+      title: "Problema com e-mail",
+      message: "Acesse o suporte do Instagram para recuperar o acesso.",
+      link: "https://help.instagram.com/"
+    };
   }
 
-  return "Problema não identificado.";
+  return {
+    title: "Erro",
+    message: "Não foi possível identificar o problema.",
+    link: "https://help.instagram.com/"
+  };
 }
 
-module.exports = { generatePlan };
+module.exports = {
+  generateRecoveryPlan
+};

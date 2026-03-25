@@ -14,11 +14,12 @@
   <main class="container">
 
     <h1>Assistente de Recuperação</h1>
+    <p class="subtitle">Responda algumas perguntas para gerar seu plano</p>
 
     <p class="progress">Etapa <span id="step-indicator">1</span> de 3</p>
 
     <!-- STEP 1 -->
-    <div id="step1" class="card fade-in">
+    <div id="step1" class="card">
       <h2>Qual é o seu problema?</h2>
       <button class="btn" data-problem="hack">Conta hackeada</button>
       <button class="btn" data-problem="senha">Esqueci a senha</button>
@@ -26,20 +27,20 @@
     </div>
 
     <!-- STEP 2 -->
-    <div id="step2" class="card hidden fade-in">
+    <div id="step2" class="card hidden">
       <h2>Você ainda tem acesso ao e-mail?</h2>
       <button class="btn" data-answer="sim">Sim</button>
       <button class="btn" data-answer="nao">Não</button>
 
-      <button class="btn-secondary" onclick="resetFlow()">Voltar</button>
+      <button class="btn-secondary" onclick="goBack()">Voltar</button>
     </div>
 
     <!-- RESULT -->
-    <div id="result" class="card hidden fade-in">
+    <div id="result" class="card hidden">
       <h2>Plano de recuperação</h2>
 
       <div class="result-box">
-        <p id="output"></p>
+        <div id="output"></div>
       </div>
 
       <button class="btn-secondary" onclick="resetFlow()">Recomeçar</button>
