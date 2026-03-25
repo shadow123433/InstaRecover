@@ -3,10 +3,10 @@
 Aplicação web desenvolvida para auxiliar usuários na recuperação de contas do Instagram, utilizando um fluxo inteligente de perguntas e integração entre frontend e backend para gerar um plano de recuperação com acesso direto aos links oficiais do suporte.
 
 ## Demonstração em vídeo
-https://youtu.be/SEU_VIDEO_AQUI
+https://youtu.be/5EFZt93s7KQ
 
 ## Sistema online
-https://SEU-SISTEMA-AQUI.com
+https://instarecover.onrender.com
 
 ## Tecnologias utilizadas
 
