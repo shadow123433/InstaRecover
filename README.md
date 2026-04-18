@@ -26,11 +26,6 @@ Integração entre frontend e backend via API REST
 
 ## Estrutura do projeto
 
-/public   → Interface da aplicação  
-/src    → Servidor e API  
-
-Dentro do backend:
-
 /public → Interface da aplicação  
 /src  
   ├── controllers → Controle das requisições  
