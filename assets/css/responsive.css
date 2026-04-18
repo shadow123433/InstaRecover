@@ -1,0 +1,56 @@
+/* Media Query para Mobile */
+@media screen and (max-width: 768px) {
+
+    /* 1. Força os cards a ficarem um embaixo do outro */
+    .features {
+        display: grid !important;
+        /* Muda de colunas para uma única linha vertical */
+        grid-template-columns: 1fr !important; 
+        gap: 1rem !important;
+        margin-top: 1rem !important; /* Remove aquela sobreposição negativa que fica ruim no mobile */
+        padding: 0 10px !important;
+    }
+
+    /* 2. Faz os cards ocuparem a largura total disponível */
+    .card {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* 3. Ajustes de texto para não estourarem a tela */
+    h1 {
+        font-size: 1.6rem !important;
+        text-align: center !important;
+    }
+
+    .hero p {
+        font-size: 1rem !important;
+        text-align: center !important;
+    }
+
+    /* 4. Melhora a lista de problemas no mobile */
+    .info ul {
+        padding-left: 0 !important;
+    }
+
+    .info ul li {
+        font-size: 0.95rem !important;
+        background-position: left top 2px !important; /* Ajusta o ícone de check */
+    }
+
+    /* 5. Ajuste para o Assistente (app.html) */
+    .result-box {
+        padding: 1rem !important;
+        font-size: 0.9rem !important;
+        border-left-width: 3px !important;
+    }
+
+    /* Botões: Mais fáceis de clicar no celular */
+    .btn, .btn-primary {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        margin: 10px 0 !important;
+    }
+}
