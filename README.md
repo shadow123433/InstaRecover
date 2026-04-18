@@ -1,6 +1,6 @@
 # InstaRecover
 
-Aplicação web desenvolvida para auxiliar usuários na recuperação de contas do Instagram, utilizando um fluxo inteligente de perguntas e integração entre frontend e backend para gerar um plano de recuperação com acesso direto aos links oficiais do suporte.
+Aplicação web que guia usuários no processo de recuperação de contas do Instagram, identificando o tipo de problema e direcionando para o fluxo correto dentro do suporte oficial, reduzindo erros comuns e perda de tempo.
 
 ## Demonstração em vídeo
 https://youtu.be/5EFZt93s7KQ
@@ -18,24 +18,25 @@ CSS
 
 ## Funcionalidades
 
-Fluxo inteligente de recuperação de conta  
-Identificação do problema do usuário  
-Geração de plano de recuperação personalizado  
-Redirecionamento para páginas oficiais do Instagram  
-Integração entre frontend e backend  
-API REST para comunicação entre cliente e servidor  
+Identificação do tipo de problema (senha, conta hackeada, acesso ao email, etc.)
+Fluxo de decisão baseado em respostas do usuário
+Geração de plano de recuperação personalizado
+Redirecionamento para páginas oficiais do suporte do Instagram
+Integração entre frontend e backend via API REST
 
 ## Estrutura do projeto
 
-/frontend   → Interface da aplicação  
-/backend    → Servidor e API  
+/public   → Interface da aplicação  
+/src    → Servidor e API  
 
 Dentro do backend:
 
-src/  
-routes        → Rotas da API  
-controllers   → Controle das requisições  
-services      → Lógica do sistema  
+/public → Interface da aplicação  
+/src  
+  ├── controllers → Controle das requisições  
+  ├── routes → Rotas da API  
+  ├── services → Lógica do sistema  
+  └── app.js → Configuração da aplicação  
 
 ## Como executar o projeto
 
@@ -78,9 +79,6 @@ O servidor irá iniciar em:
 
 http://localhost:3000  
 
-Depois disso, abra o arquivo usando a extensão live server ou do jeito que vc preferir:
-
-index.html  
 
 ## Objetivo do projeto
 
