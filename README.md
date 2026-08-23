@@ -79,5 +79,10 @@ http://localhost:3000
 
 Este projeto foi desenvolvido com o objetivo de criar uma aplicação web que simula um assistente de recuperação de contas, aplicando conceitos de desenvolvimento full stack, organização de código em camadas e comunicação entre frontend e backend através de API REST.
 
+## 👨‍💻 Autor
+
+Thiago Martins  
+
+---
 
 ⭐ Se este projeto foi útil ou interessante, considere deixar uma estrela no repositório.
